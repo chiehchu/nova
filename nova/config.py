@@ -52,6 +52,7 @@ def parse_args(argv, default_config_files=None):
     debugger.register_cli_opts()
     CONF(argv[1:],
          project='nova',
-         version=version.version_string(),
+         version='0.1',
+         #version=version.version_string(),
          default_config_files=default_config_files)
     rpc.init(CONF)

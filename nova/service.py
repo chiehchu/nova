@@ -113,9 +113,12 @@ service_opts = [
                default=60,
                help='Maximum time since last check-in for up service'),
     ]
-
+k8s_listen_port_opt = cfg.IntOpt('k8s_listen_port',
+                                 default=8010,
+                                 help='kubernetes service layer listen port')
 CONF = cfg.CONF
 CONF.register_opts(service_opts)
+CONF.register_opt(k8s_listen_port_opt)
 CONF.import_opt('host', 'nova.netconf')
 
 
