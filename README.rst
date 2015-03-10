@@ -58,4 +58,4 @@ Install procedure
   [pipeline:k8shelper]
   pipeline = k8shelperapp
   [app:k8shelperapp]
-  paste.app_factory = nova.api.openstack.k8s:APIRouter.factoryibxml2-dev libxslt1-dev
+  paste.app_factory = nova.api.openstack.k8s:APIRouter.factory
