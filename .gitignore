@@ -39,3 +39,9 @@ nosetests.xml
 nova/tests/cover/*
 nova/vcsversion.py
 tools/conf/nova.conf*
+mktags.conf
+mktags.files
+cscope.in.out
+cscope.out
+cscope.po.out
+tags
