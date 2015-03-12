@@ -18,7 +18,7 @@ from oslo_config import cfg
 from webob import exc
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.schemas.v3 import rescue
+from nova.api.openstack.k8s.schemas.v3 import rescue
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation
@@ -30,7 +30,7 @@ from nova import utils
 ALIAS = "os-rescue"
 CONF = cfg.CONF
 CONF.import_opt('enable_instance_password',
-                'nova.api.openstack.compute.servers')
+                'nova.api.openstack.k8s.servers')
 
 authorize = extensions.os_compute_authorizer(ALIAS)
 

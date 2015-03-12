@@ -17,7 +17,7 @@ from oslo_utils import strutils
 import webob
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.views import flavors as flavors_view
+from nova.api.openstack.k8s.views import flavors as flavors_view
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.compute import flavors

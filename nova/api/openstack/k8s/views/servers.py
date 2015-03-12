@@ -20,9 +20,9 @@ from oslo_log import log as logging
 from oslo_utils import timeutils
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.views import addresses as views_addresses
-from nova.api.openstack.compute.views import flavors as views_flavors
-from nova.api.openstack.compute.views import images as views_images
+from nova.api.openstack.k8s.views import addresses as views_addresses
+from nova.api.openstack.k8s.views import flavors as views_flavors
+from nova.api.openstack.k8s.views import images as views_images
 from nova.i18n import _LW
 from nova.objects import base as obj_base
 from nova import utils

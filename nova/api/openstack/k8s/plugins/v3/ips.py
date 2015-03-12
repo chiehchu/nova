@@ -17,7 +17,7 @@ from webob import exc
 
 import nova
 from nova.api.openstack import common
-from nova.api.openstack.compute.views import addresses as views_addresses
+from nova.api.openstack.k8s.views import addresses as views_addresses
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.i18n import _

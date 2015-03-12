@@ -21,7 +21,7 @@ from oslo_log import log as logging
 import six
 from webob import exc
 
-from nova.api.openstack.compute.schemas.v3 import tenant_networks as schema
+from nova.api.openstack.k8s.schemas.v3 import tenant_networks as schema
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation
@@ -35,13 +35,13 @@ from nova import quota
 
 CONF = cfg.CONF
 CONF.import_opt('enable_network_quota',
-                'nova.api.openstack.compute.contrib.os_tenant_networks')
+                'nova.api.openstack.k8s.contrib.os_tenant_networks')
 CONF.import_opt('use_neutron_default_nets',
-                'nova.api.openstack.compute.contrib.os_tenant_networks')
+                'nova.api.openstack.k8s.contrib.os_tenant_networks')
 CONF.import_opt('neutron_default_tenant_id',
-                'nova.api.openstack.compute.contrib.os_tenant_networks')
+                'nova.api.openstack.k8s.contrib.os_tenant_networks')
 CONF.import_opt('quota_networks',
-                'nova.api.openstack.compute.contrib.os_tenant_networks')
+                'nova.api.openstack.k8s.contrib.os_tenant_networks')
 
 
 ALIAS = 'os-tenant-networks'

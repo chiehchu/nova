@@ -14,7 +14,7 @@
 #    under the License.
 
 
-from nova.api.openstack.compute.views import limits as limits_views
+from nova.api.openstack.k8s.views import limits as limits_views
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova import quota

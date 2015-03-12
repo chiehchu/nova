@@ -15,7 +15,7 @@
 
 from oslo_config import cfg
 
-from nova.api.openstack.compute.views import versions as views_versions
+from nova.api.openstack.k8s.views import versions as views_versions
 from nova.api.openstack import wsgi
 
 

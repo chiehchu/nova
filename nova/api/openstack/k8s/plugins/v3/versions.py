@@ -15,8 +15,8 @@
 
 import webob.exc
 
-from nova.api.openstack.compute import versions
-from nova.api.openstack.compute.views import versions as views_versions
+from nova.api.openstack.k8s import versions
+from nova.api.openstack.k8s.views import versions as views_versions
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 

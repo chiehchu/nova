@@ -20,7 +20,7 @@ from oslo_utils import uuidutils
 import webob
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.schemas.v3 import floating_ips
+from nova.api.openstack.k8s.schemas.v3 import floating_ips
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation

@@ -16,7 +16,7 @@
 import webob.exc
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.views import images as views_images
+from nova.api.openstack.k8s.views import images as views_images
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova import exception

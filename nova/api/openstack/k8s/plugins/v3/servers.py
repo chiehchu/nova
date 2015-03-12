@@ -29,8 +29,8 @@ import webob
 from webob import exc
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.schemas.v3 import servers as schema_servers
-from nova.api.openstack.compute.views import servers as views_servers
+from nova.api.openstack.k8s.schemas.v3 import servers as schema_servers
+from nova.api.openstack.k8s.views import servers as views_servers
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation
@@ -48,7 +48,7 @@ ALIAS = 'servers'
 
 CONF = cfg.CONF
 CONF.import_opt('enable_instance_password',
-                'nova.api.openstack.compute.servers')
+                'nova.api.openstack.k8s.servers')
 CONF.import_opt('network_api_class', 'nova.network')
 CONF.import_opt('reclaim_instance_interval', 'nova.compute.manager')
 CONF.import_opt('extensions_blacklist', 'nova.api.openstack', group='osapi_v3')
@@ -1101,6 +1101,7 @@ class Servers(extensions.V3APIExtensionBase):
     version = 1
 
     def get_resources(self):
+        import pdb; pdb.set_trace()  # XXX BREAKPOINT
         member_actions = {'action': 'POST'}
         collection_actions = {'detail': 'GET'}
         resources = [

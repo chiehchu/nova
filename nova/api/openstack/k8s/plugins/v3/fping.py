@@ -32,7 +32,7 @@ ALIAS = "os-fping"
 authorize = extensions.os_compute_authorizer(ALIAS)
 
 CONF = cfg.CONF
-CONF.import_opt('fping_path', 'nova.api.openstack.compute.contrib.fping')
+CONF.import_opt('fping_path', 'nova.api.openstack.k8s.contrib.fping')
 
 
 class FpingController(wsgi.Controller):

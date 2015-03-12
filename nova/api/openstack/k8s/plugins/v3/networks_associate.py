@@ -12,7 +12,7 @@
 
 from webob import exc
 
-from nova.api.openstack.compute.schemas.v3 import networks_associate
+from nova.api.openstack.k8s.schemas.v3 import networks_associate
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation

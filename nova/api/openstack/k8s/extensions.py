@@ -21,7 +21,7 @@ from nova.api.openstack import extensions as base_extensions
 ext_opts = [
     cfg.MultiStrOpt('osapi_compute_extension',
                     default=[
-                      'nova.api.openstack.compute.contrib.standard_extensions'
+                      'nova.api.openstack.k8s.contrib.standard_extensions'
                       ],
                     help='osapi compute extension to load'),
 ]

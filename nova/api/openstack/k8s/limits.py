@@ -43,7 +43,7 @@ from oslo_utils import importutils
 import webob.dec
 import webob.exc
 
-from nova.api.openstack.compute.views import limits as limits_views
+from nova.api.openstack.k8s.views import limits as limits_views
 from nova.api.openstack import wsgi
 from nova.i18n import _
 from nova import quota

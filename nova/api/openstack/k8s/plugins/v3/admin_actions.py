@@ -15,7 +15,7 @@
 from webob import exc
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.schemas.v3 import reset_server_state
+from nova.api.openstack.k8s.schemas.v3 import reset_server_state
 from nova.api.openstack import extensions
 from nova.api.openstack import wsgi
 from nova.api import validation
@@ -26,7 +26,7 @@ from nova import exception
 ALIAS = "os-admin-actions"
 
 # States usable in resetState action
-# NOTE: It is necessary to update the schema of nova/api/openstack/compute/
+# NOTE: It is necessary to update the schema of nova.api.openstack.k8s/
 # schemas/v3/reset_server_state.py, when updating this state_map.
 state_map = dict(active=vm_states.ACTIVE, error=vm_states.ERROR)
 

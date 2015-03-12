@@ -31,7 +31,7 @@ import webob
 from webob import exc
 
 from nova.api.openstack import common
-from nova.api.openstack.compute.views import servers as views_servers
+from nova.api.openstack.k8s.views import servers as views_servers
 from nova.api.openstack import wsgi
 from nova import block_device
 from nova import compute
