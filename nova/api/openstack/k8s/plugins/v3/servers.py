@@ -1101,7 +1101,6 @@ class Servers(extensions.V3APIExtensionBase):
     version = 1
 
     def get_resources(self):
-        import pdb; pdb.set_trace()  # XXX BREAKPOINT
         member_actions = {'action': 'POST'}
         collection_actions = {'detail': 'GET'}
         resources = [
