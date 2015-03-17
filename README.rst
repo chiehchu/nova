@@ -38,7 +38,9 @@ Install procedure
   #rpc_backend = nova.openstack.common.rpc.impl_kombu
   enabled_apis = k8s
   k8s_listen_port = 8018
-
+  [osapi_v3]
+  enabled = True 
+  
   paasuser1@paas-ubuntu-1:~/source/nova$ cat /etc/nova/api-paste.ini 
   [composite:k8s]                                                       
   use = call:nova.api.openstack.urlmap:urlmap_factory                             
